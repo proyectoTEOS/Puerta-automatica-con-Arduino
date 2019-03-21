@@ -19,25 +19,21 @@ Servo servoRightT;
 Servo servoLeftT;
 
 //Assigning the pins to the LEDs
-const int ledOpenT = 2;
-const int ledClosedT = 4;
+const uint8_t ledOpenT = 2;
+const uint8_t ledClosedT = 4;
 
 //Variables to store positions of the servos, the distance of the ultrasonic, a flag that
 //allows to rectify the change of distance and starts a variable of minimum seconds to two
-int posRightT = 0;
-int posLeftT = 0;
-int distanceT = 0;
-int initialDistanceT = 0;
+int16_t posRightT, posLeftT, distanceT, initialDistanceT, continuousSecondsT = 0;
 bool flagT = false;
-int continuousSecondsT = 0;
-const int minimalSecondsT = 2;
+const uint8_t minimalSecondsT = 2;
 
 //loopTimeT and waitingDoorClosingT define the time (in milliseconds) that the events of
 //your function will last, timeElapsedT and timeElapsedDoorClosingT are variables
 //that will store the elapsed time
-const int loopTimeT = 200;
+const uint8_t loopTimeT = 200;
 unsigned long timeElapsedT = 0;
-const int waitingDoorClosingT = 1000;
+const uint16_t waitingDoorClosingT = 1000;
 unsigned long timeElapsedDoorClosingT = 0;
 
 void setup() {
@@ -75,9 +71,9 @@ void loop() {
 
 //This function returns the average of 4 readings of the distance, its purpose is to have
 //a more accurate data of the measurement
-int summary() {
-  int sumT = 0;
-  for (int iT = 0; iT < 3; iT ++) {
+uint8_t summary() {
+  uint8_t sumT = 0;
+  for (uint8_t iT = 0; iT < 3; iT ++) {
     sumT = sumT + (distanceT = ultrasonicT.Ranging(CM));
     delay(50);
   }
