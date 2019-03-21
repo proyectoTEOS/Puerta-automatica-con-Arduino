@@ -38,4 +38,4 @@ Toma en cuenta estas consideraciones:
 Aquí dejaremos imágenes de nuestro prototipo, pronto subiremos los pasos para que puedas realizar un prototipo similar.
 ![](/resources/prototipo-puerta-automatica-1.jpg)
 ![](/resources/prototipo-puerta-automatica-2.jpg)
-![](/resources/prototipo-puerta-automatica-3.gif)
+![](https://www.proyecto-teos.com/git/puerta/demo-puerta.gif)
