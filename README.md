@@ -1,6 +1,5 @@
 # Puerta automática con Arduino
-Este es un proyecto de una puerta automática con Arduino.
-
+El sistema responde cuando un objeto es detectado a menos de 10cm de distancia del sensor ultras&oacute;nico, cuando est&aacute; dentro del rango abre las puertas accionadas por los servomotores, si el objeto se mueve mayor a 10cm entonces comienza una cuenta de aproximadamente 3 segundos y se cierran las puertas. Podrás encontrar este proyecto con más detalles aquí [Puerta automática con Arduino](https://www.proyecto-teos.com/puerta-automatica-con-arduino).
 ### Empezando
 Este proyecto se basa en los sensores que hemos usado anteriormente, si no tienes mucha experiencia en el manejo de dichos sensores puedes consultar nuestros repositorios.
 
@@ -39,3 +38,5 @@ Aquí dejaremos imágenes de nuestro prototipo, pronto subiremos los pasos para 
 ![](/resources/prototipo-puerta-automatica-1.jpg)
 ![](/resources/prototipo-puerta-automatica-2.jpg)
 ![](https://www.proyecto-teos.com/git/puerta/demo-puerta.gif)
+
+Si requieres más información de este y otros proyectos, puedes ir a nuestra [página web](https://www.proyecto-teos.com) y dar clic en la parte de proyectos en donde encontraras los códigos, diagramas, hojas de datos, librerías, recursos y una documentación más extensa.
